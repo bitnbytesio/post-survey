@@ -1,0 +1,29 @@
+.post-survey-up,.post-survey-down {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.post-survey-up-white {
+    background: url("images/thumb-up-white.png");
+    background-size: 100% 100%;
+}
+
+.post-survey-down-white {
+    background: url("images/thumb-down-white.png");
+    background-size: 100% 100%;
+}
+
+.post-survey-up-colored {
+    background: url("images/thumb-up-green.png");
+    background-size: 100% 100%;
+}
+
+.post-survey-down-colored {
+    background: url("images/thumb-down-red.png");
+    background-size: 100% 100%;
+}
+
+.post_survey .positive {
+    border-bottom: 1px dotted #ccc;
+}
