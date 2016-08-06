@@ -240,7 +240,7 @@ if (!class_exists('POST_SURVEY_SETUP')) {
          */
         public function section_text()
         {
-            echo '<p>Main description of this section here.</p>';
+            echo '<p>You can also use [post-survey id="your post id here"] shortcode.</p>';
         }
 
         /**
