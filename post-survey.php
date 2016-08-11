@@ -53,7 +53,7 @@ if (!class_exists('POST_SURVEY_SETUP')) {
         {
 
             register_activation_hook(__FILE__, array($this, '_activate'));
-            register_uninstall_hook(__FILE__, array($this, '_uninstall'));
+            register_uninstall_hook(__FILE__, array('POST_SURVEY_SETUP', '_uninstall'));
 
             $this->default_templete = file_get_contents(PS_BASE_DIR . '/template.php');
 
@@ -693,7 +693,7 @@ if (!class_exists('POST_SURVEY_SETUP')) {
         /**
          * Method to uninstall plugin
          */
-        public function _uninstall()
+        public static function _uninstall()
         {
 
             delete_option('post-survey-info');
